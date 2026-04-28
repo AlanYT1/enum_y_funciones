@@ -1,10 +1,8 @@
-
 static String a;
 static boolean jugar = true;
 static boolean verificar;
 static PPT ppt;
 static Scanner s = new Scanner(System.in);
-
 
 enum PPT {
     PIEDRA,
