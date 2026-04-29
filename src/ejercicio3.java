@@ -1,4 +1,3 @@
-
 static Scanner leer = new Scanner(System.in);
 
 enum RESULTADO{
@@ -6,7 +5,6 @@ enum RESULTADO{
     MENOR,
     IGUAL
 }
-
 
 void main() {
 //    Realizar un juego en el cual adivinas el numero de la pc,
@@ -28,9 +26,11 @@ public static void jugar(int numsecret){
 
     IO.println("Adivine el numero secreto");
     IO.println("Tiene 10 intentos para adivinar");
+
     while(intentos < 10 && !adivinar){
         IO.println("Ingrese un numero del 1 al 100 ");
         int numuser = leer.nextInt();
+
         if (numuser >= 1 && numuser <= 100) {
             RESULTADO resultado = verificar(numuser, numsecret);
             intentos++;
